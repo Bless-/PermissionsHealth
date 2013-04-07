@@ -6,8 +6,10 @@ import net.bless.ph.PHeal;
 
 import org.bukkit.Bukkit;
 import org.bukkit.event.EventHandler;
+import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
+import org.bukkit.event.player.PlayerQuitEvent;
 import org.bukkit.plugin.PluginDescriptionFile;
 
 import org.bukkit.plugin.java.JavaPlugin;
@@ -127,6 +129,11 @@ public class PermissionsHealth extends JavaPlugin implements Listener {
 			event.getPlayer().setMaxHealth(
 					PermissionsHealth.this.getConfig().getInt("AdminHealth"));
 		}
+
 	}
 
+	@EventHandler(ignoreCancelled = true, priority = EventPriority.MONITOR)
+	public void onLeave(PlayerQuitEvent event) {
+		event.getPlayer().setMaxHealth(20);
+	}
 }
