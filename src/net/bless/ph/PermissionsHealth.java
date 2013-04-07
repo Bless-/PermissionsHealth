@@ -9,6 +9,7 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
+import org.bukkit.event.player.PlayerKickEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
 import org.bukkit.plugin.PluginDescriptionFile;
 
@@ -136,4 +137,8 @@ public class PermissionsHealth extends JavaPlugin implements Listener {
 	public void onLeave(PlayerQuitEvent event) {
 		event.getPlayer().setMaxHealth(20);
 	}
+	@EventHandler(ignoreCancelled = true, priority = EventPriority.MONITOR)
+	public void onKick(PlayerKickEvent event) {
+		event.getPlayer().setMaxHealth(20);
+}
 }

@@ -1,7 +1,7 @@
 name: PermissionsHealth
 main: net.bless.ph.PermissionsHealth
-version: 0.0.30
-builddate: 2013/04/07 01:26
+version: 0.0.32
+builddate: 2013/04/07 02:16
 author: Bless
 commands:
     pheal:
