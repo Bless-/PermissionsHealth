@@ -1,0 +1,75 @@
+#Set Health for Groups/Classes or change the GuestHealth to default all players on server without the permissionshealth.level. nodes
+#
+#permissions Nodes
+#
+#Be Smart when setting Health like Health: 99999 can break the game. so test it out and see what values work for you =)
+#
+#Yes the values Can be changed to whatever you want for each Health1-20 Guest and Admin
+#
+#Guest Health is default for anyone who joins not in a group
+#
+GuestHealth: 20
+#
+#permissionshealth.level.1
+Health1: 25
+#
+#permissionshealth.level.2
+Health2: 30
+#
+#permissionshealth.level.3
+Health3: 40
+#
+#permissionshealth.level.4
+Health4: 45
+#
+#permissionshealth.level.5
+Health5: 50
+#
+#permissionshealth.level.6
+Health6: 55
+#
+#permissionshealth.level.7
+Health7: 60
+#
+#permissionshealth.level.8
+Health8: 65
+#
+#permissionshealth.level.9
+Health9: 70
+#
+#permissionshealth.level.10
+Health10: 75
+#
+#permissionshealth.level.11
+Health11: 80
+#
+#permissionshealth.level.12
+Health12: 85
+#
+#permissionshealth.level.13
+Health13: 95
+#
+#permissionshealth.level.14
+Health14: 100
+#
+#permissionshealth.level.15
+Health15: 110
+#
+#permissionshealth.level.16
+Health16: 120
+#
+#permissionshealth.level.17
+Health17: 130
+#
+#permissionshealth.level.18
+Health18: 140
+#
+#permissionshealth.level.19
+Health19: 150
+#
+#permissionshealth.level.20
+Health20: 160
+#
+#permissionshealth.admin
+#This is also set for anyone who is OP on server
+AdminHealth: 1000
