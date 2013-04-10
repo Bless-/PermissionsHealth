@@ -18,55 +18,15 @@ commands:
     pho:
       description: Use to view target's current health.
       usage: /<command>
-    ph:
+    phreload:
       description: reload
-      usage: /<command> reload
+      usage: /<command>
       permission: permissionshealth.reload
       permission-message: You don't have <permission>
 permissions:
    permissionshealth.guest:
         default: true
         description: Gives Health to Guest
-   permissionshealth.level.1:
-        description: Gives Health to Level 1
-   permissionshealth.level.2:
-        description: Gives Health to Level 2
-   permissionshealth.level.3:
-        description: Gives Health to Level 3
-   permissionshealth.level.4:
-        description: Gives Health to Level 4
-   permissionshealth.level.5:
-        description: Gives Health to Level 5
-   permissionshealth.level.6:
-        description: Gives Health to Level 6
-   permissionshealth.level.7:
-        description: Gives Health to Level 7
-   permissionshealth.level.8:
-        description: Gives Health to Level 8
-   permissionshealth.level.9:
-        description: Gives Health to Level 9
-   permissionshealth.level.10:
-        description: Gives Health to Level 10
-   permissionshealth.level.11:
-        description: Gives Health to Level 11
-   permissionshealth.level.21:
-        description: Gives Health to Level 12
-   permissionshealth.level.13:
-        description: Gives Health to Level 13
-   permissionshealth.level.14:
-        description: Gives Health to Level 14
-   permissionshealth.level.15:
-        description: Gives Health to Level 15
-   permissionshealth.level.16:
-        description: Gives Health to Level 16
-   permissionshealth.level.17:
-        description: Gives Health to Level 17
-   permissionshealth.level.18:
-        description: Gives Health to Level 18
-   permissionshealth.level.19:
-        description: Gives Health to Level 19
-   permissionshealth.level.20:
-        description: Gives Health to Level 20
    permissionshealth.admin:
         description: Gives Health to Admin
         default: op

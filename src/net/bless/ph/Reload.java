@@ -21,7 +21,7 @@ public class Reload implements CommandExecutor {
 				this.player = ((Player) sender);
 			}
 
-			if (cmd.getName().equalsIgnoreCase("ph")) {
+			if (cmd.getName().equalsIgnoreCase("phreload")) {
 				this.plugin.reloadConfig();
 				this.player.sendMessage(ChatColor.GOLD
 						+ "PermissionsHealth has been reloaded");

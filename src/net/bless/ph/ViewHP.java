@@ -7,11 +7,11 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-public class VHealth implements CommandExecutor {
+public class ViewHP implements CommandExecutor {
 	PermissionsHealth plugin;
 	public Player player;
 
-	public VHealth(PermissionsHealth plugin) {
+	public ViewHP(PermissionsHealth plugin) {
 		this.plugin = plugin;
 	}
 

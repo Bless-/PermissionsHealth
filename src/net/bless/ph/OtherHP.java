@@ -8,14 +8,14 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-public class Ohealth implements CommandExecutor {
+public class OtherHP implements CommandExecutor {
 	PermissionsHealth plugin;
 	public Player player;
 	public Player target;
 	public int playerHealth;
 	public int targetHealth;
 
-	public Ohealth(PermissionsHealth plugin) {
+	public OtherHP(PermissionsHealth plugin) {
 		this.plugin = plugin;
 	}
 
@@ -35,8 +35,7 @@ public class Ohealth implements CommandExecutor {
 					if (player.getServer().getPlayer(args[0]) != null) {
 						Player targetPlayer = player.getServer().getPlayer(
 								args[0]);
-						player.sendMessage(ChatColor.GREEN
-								+ targetPlayer.getDisplayName() + " has "
+						player.sendMessage(ChatColor.GREEN + targetPlayer.getDisplayName() + " has "
 								+ targetPlayer.getHealth() + " Health!");
 					} else {
 						player.sendMessage("You do not have permission to do that command!");
