@@ -12,609 +12,610 @@
 #===================================================
 #
 #Guest Health is default for anyone who does not have a permissions node
-#
+#permissionshealth.guest
 GuestHealth: 20
 #
-#permissionshealth.hp.1
+Node1: permissionshealth.hp.1
 Health1: 25
 #
-#permissionshealth.hp.2
+Node2: permissionshealth.hp.2
 Health2: 30
 #
-#permissionshealth.hp.3
+Node3: permissionshealth.hp.3
 Health3: 20
 #
-#permissionshealth.hp.4
+Node4: permissionshealth.hp.4
 Health4: 20
 #
-#permissionshealth.hp.5
+Node5: permissionshealth.hp.5
 Health5: 20
 #
-#permissionshealth.hp.6
+Node6: permissionshealth.hp.6
 Health6: 20
 #
-#permissionshealth.hp.7
+Node7: permissionshealth.hp.7
 Health7: 20
 #
-#permissionshealth.hp.8
+Node8: permissionshealth.hp.8
 Health8: 20
 #
-#permissionshealth.hp.9
+Node9: permissionshealth.hp.9
 Health9: 20
 #
-#permissionshealth.hp.10
+Node10: permissionshealth.hp.10
 Health10: 20
 #
-#permissionshealth.hp.11
+Node11: permissionshealth.hp.11
 Health11: 20
 #
-#permissionshealth.hp.12
+Node12: permissionshealth.hp.12
 Health12: 20
 #
-#permissionshealth.hp.13
+Node13: permissionshealth.hp.13
 Health13: 20
 #
-#permissionshealth.hp.14
+Node14: permissionshealth.hp.14
 Health14: 20
 #
-#permissionshealth.hp.15
+Node15: permissionshealth.hp.15
 Health15: 20
 #
-#permissionshealth.hp.16
+Node16: permissionshealth.hp.16
 Health16: 20
 #
-#permissionshealth.hp.17
+Node17: permissionshealth.hp.17
 Health17: 20
 #
-#permissionshealth.hp.18
+Node18: permissionshealth.hp.18
 Health18: 20
 #
-#permissionshealth.hp.19
+Node19: permissionshealth.hp.19
 Health19: 20
 #
-#permissionshealth.hp.20
+Node20: permissionshealth.hp.20
 Health20: 20
 #
-#permissionshealth.hp.21
+Node21: permissionshealth.hp.21
 Health21: 20
 #
-#permissionshealth.hp.22
+Node22: permissionshealth.hp.22
 Health22: 20
 #
-#permissionshealth.hp.23
+Node23: permissionshealth.hp.23
 Health23: 20
 #
-#permissionshealth.hp.24
+Node24: permissionshealth.hp.24
 Health24: 20
 #
-#permissionshealth.hp.25
+Node25: permissionshealth.hp.25
 Health25: 20
 #
-#permissionshealth.hp.26
+Node26: permissionshealth.hp.26
 Health26: 20
 #
-#permissionshealth.hp.27
+Node27: permissionshealth.hp.27
 Health27: 20
 #
-#permissionshealth.hp.28
+Node28: permissionshealth.hp.28
 Health28: 20
 #
-#permissionshealth.hp.29
+Node29: permissionshealth.hp.29
 Health29: 20
 #
-#permissionshealth.hp.30
+Node30: permissionshealth.hp.30
 Health30: 20
 #
-#permissionshealth.hp.31
+Node31: permissionshealth.hp.31
 Health31: 20
 #
-#permissionshealth.hp.31
+Node32: permissionshealth.hp.31
 Health32: 20
 #
-#permissionshealth.hp.33
+Node33: permissionshealth.hp.33
 Health33: 20
 #
-#permissionshealth.hp.34
+Node34: permissionshealth.hp.34
 Health34: 20
 #
-#permissionshealth.hp.35
+Node35: permissionshealth.hp.35
 Health35: 20
 #
-#permissionshealth.hp.36
+Node36: permissionshealth.hp.36
 Health36: 20
 #
-#permissionshealth.hp.37
+Node37: permissionshealth.hp.37
 Health37: 20
 #
-#permissionshealth.hp.38
+Node38: permissionshealth.hp.38
 Health38: 20
 #
-#permissionshealth.hp.39
+Node39: permissionshealth.hp.39
 Health39: 20
 #
-#permissionshealth.hp.40
+Node40: permissionshealth.hp.40
 Health40: 20
 #
-#permissionshealth.hp.41
+Node41: permissionshealth.hp.41
 Health41: 20
 #
-#permissionshealth.hp.42
+Node42: permissionshealth.hp.42
 Health42: 20
 #
-#permissionshealth.hp.43
+Node43: permissionshealth.hp.43
 Health43: 20
 #
-#permissionshealth.hp.44
+Node44: permissionshealth.hp.44
 Health44: 20
 #
-#permissionshealth.hp.45
+Node45: permissionshealth.hp.45
 Health45: 20
 #
-#permissionshealth.hp.46
+Node46: permissionshealth.hp.46
 Health46: 20
 #
-#permissionshealth.hp.47
+Node47: permissionshealth.hp.47
 Health47: 20
 #
-#permissionshealth.hp.48
+Node48: permissionshealth.hp.48
 Health48: 20
 #
-#permissionshealth.hp.49
+Node49: permissionshealth.hp.49
 Health49: 20
 #
-#permissionshealth.hp.50
+Node50: permissionshealth.hp.50
 Health50: 20
 #
-#permissionshealth.hp.51
+Node51: permissionshealth.hp.51
 Health51: 20
 #
-#permissionshealth.hp.52
+Node52: permissionshealth.hp.52
 Health52: 20
 #
-#permissionshealth.hp.53
+Node53: permissionshealth.hp.53
 Health53: 20
 #
-#permissionshealth.hp.54
+Node54: permissionshealth.hp.54
 Health54: 20
 #
-#permissionshealth.hp.55
+Node55: permissionshealth.hp.55
 Health55: 20
 #
-#permissionshealth.hp.56
+Node56: permissionshealth.hp.56
 Health56: 20
 #
-#permissionshealth.hp.57
+Node57: permissionshealth.hp.57
 Health57: 20
 #
-#permissionshealth.hp.58
+Node58: permissionshealth.hp.58
 Health58: 20
 #
-#permissionshealth.hp.59
+Node59: permissionshealth.hp.59
 Health59: 20
 #
-#permissionshealth.hp.60
+Node60: permissionshealth.hp.60
 Health60: 20
 #
-#permissionshealth.hp.61
+Node61: permissionshealth.hp.61
 Health61: 20
 #
-#permissionshealth.hp.62
+Node62: permissionshealth.hp.62
 Health62: 20
 #
-#permissionshealth.hp.63
+Node63: permissionshealth.hp.63
 Health63: 20
 #
-#permissionshealth.hp.64
+Node64: permissionshealth.hp.64
 Health64: 20
 #
-#permissionshealth.hp.65
+Node65: permissionshealth.hp.65
 Health65: 20
 #
-#permissionshealth.hp.66
+Node66: permissionshealth.hp.66
 Health66: 20
 #
-#permissionshealth.hp.67
+Node67: permissionshealth.hp.67
 Health67: 20
 #
-#permissionshealth.hp.68
+Node68: permissionshealth.hp.68
 Health68: 20
 #
-#permissionshealth.hp.69
+Node69: permissionshealth.hp.69
 Health69: 20
 #
-#permissionshealth.hp.70
+Node70: permissionshealth.hp.70
 Health70: 20
 #
-#permissionshealth.hp.71
+Node71: permissionshealth.hp.71
 Health71: 20
 #
-#permissionshealth.hp.72
+Node72: permissionshealth.hp.72
 Health72: 20
 #
-#permissionshealth.hp.73
+Node73: permissionshealth.hp.73
 Health73: 20
 #
-#permissionshealth.hp.74
+Node74: permissionshealth.hp.74
 Health74: 20
 #
-#permissionshealth.hp.75
+Node75: permissionshealth.hp.75
 Health75: 20
 #
-#permissionshealth.hp.76
+Node76: permissionshealth.hp.76
 Health76: 20
 #
-#permissionshealth.hp.77
+Node77: permissionshealth.hp.77
 Health77: 20
 #
-#permissionshealth.hp.78
+Node78: permissionshealth.hp.78
 Health78: 20
 #
-#permissionshealth.hp.79
+Node79: permissionshealth.hp.79
 Health79: 20
 #
-#permissionshealth.hp.80
+Node80: permissionshealth.hp.80
 Health80: 20
 #
-#permissionshealth.hp.81
+Node81: permissionshealth.hp.81
 Health81: 20
 #
-#permissionshealth.hp.82
+Node82: permissionshealth.hp.82
 Health82: 20
 #
-#permissionshealth.hp.83
+Node83: permissionshealth.hp.83
 Health83: 20
 #
-#permissionshealth.hp.84
+Node84: permissionshealth.hp.84
 Health84: 20
 #
-#permissionshealth.hp.85
+Node85: permissionshealth.hp.85
 Health85: 20
 #
-#permissionshealth.hp.86
+Node86: permissionshealth.hp.86
 Health86: 20
 #
-#permissionshealth.hp.87
+Node87: permissionshealth.hp.87
 Health87: 20
 #
-#permissionshealth.hp.88
+Node88: permissionshealth.hp.88
 Health88: 20
 #
-#permissionshealth.hp.89
+Node89: permissionshealth.hp.89
 Health89: 20
 #
-#permissionshealth.hp.90
+Node90: permissionshealth.hp.90
 Health90: 20
 #
-#permissionshealth.hp.91
+Node91: permissionshealth.hp.91
 Health91: 20
 #
-#permissionshealth.hp.92
+Node92: permissionshealth.hp.92
 Health92: 20
 #
-#permissionshealth.hp.93
+Node93: permissionshealth.hp.93
 Health93: 20
 #
-#permissionshealth.hp.94
+Node94: permissionshealth.hp.94
 Health94: 20
 #
-#permissionshealth.hp.95
+Node95: permissionshealth.hp.95
 Health95: 20
 #
-#permissionshealth.hp.96
+Node96: permissionshealth.hp.96
 Health96: 20
 #
-#permissionshealth.hp.97
+Node97: permissionshealth.hp.97
 Health97: 20
 #
-#permissionshealth.hp.98
+Node98: permissionshealth.hp.98
 Health98: 20
 #
-#permissionshealth.hp.99
+Node99: permissionshealth.hp.99
 Health99: 20
 #
-#permissionshealth.hp.100
+Node100: permissionshealth.hp.100
 Health100: 20
 #
-#permissionshealth.hp.101
+Node101: permissionshealth.hp.101
 Health101: 20
 #
-#permissionshealth.hp.102
+Node102: permissionshealth.hp.102
 Health102: 20
 #
-#permissionshealth.hp.103
+Node103: permissionshealth.hp.103
 Health103: 20
 #
-#permissionshealth.hp.104
+Node104: permissionshealth.hp.104
 Health104: 20
 #
-#permissionshealth.hp.105
+Node105: permissionshealth.hp.105
 Health105: 20
 #
-#permissionshealth.hp.106
+Node106: permissionshealth.hp.106
 Health106: 20
 #
-#permissionshealth.hp.107
+Node107: permissionshealth.hp.107
 Health107: 20
 #
-#permissionshealth.hp.108
+Node108: permissionshealth.hp.108
 Health108: 20
 #
-#permissionshealth.hp.109
+Node109: permissionshealth.hp.109
 Health109: 20
 #
-#permissionshealth.hp.110
+Node110: permissionshealth.hp.110
 Health110: 20
 #
-#permissionshealth.hp.111
+Node111: permissionshealth.hp.111
 Health111: 20
 #
-#permissionshealth.hp.112
+Node112: permissionshealth.hp.112
 Health112: 20
 #
-#permissionshealth.hp.113
+Node113: permissionshealth.hp.113
 Health113: 20
 #
-#permissionshealth.hp.114
+Node114: permissionshealth.hp.114
 Health114: 20
 #
-#permissionshealth.hp.115
+Node115: permissionshealth.hp.115
 Health115: 20
 #
-#permissionshealth.hp.116
+Node116: permissionshealth.hp.116
 Health116: 20
 #
-#permissionshealth.hp.117
+Node117: permissionshealth.hp.117
 Health117: 20
 #
-#permissionshealth.hp.118
+Node118: permissionshealth.hp.118
 Health118: 20
 #
-#permissionshealth.hp.119
+Node119: permissionshealth.hp.119
 Health119: 20
 #
-#permissionshealth.hp.120
+Node120: permissionshealth.hp.120
 Health120: 20
 #
-#permissionshealth.hp.121
+Node121: permissionshealth.hp.121
 Health121: 20
 #
-#permissionshealth.hp.122
+Node122: permissionshealth.hp.122
 Health122: 20
 #
-#permissionshealth.hp.123
+Node123: permissionshealth.hp.123
 Health123: 20
 #
-#permissionshealth.hp.124
+Node124: permissionshealth.hp.124
 Health124: 20
 #
-#permissionshealth.hp.125
+Node125: permissionshealth.hp.125
 Health125: 20
 #
-#permissionshealth.hp.126
+Node126: permissionshealth.hp.126
 Health126: 20
 #
-#permissionshealth.hp.127
+Node127: permissionshealth.hp.127
 Health127: 20
 #
-#permissionshealth.hp.128
+Node128: permissionshealth.hp.128
 Health128: 20
 #
-#permissionshealth.hp.129
+Node129: permissionshealth.hp.129
 Health129: 20
 #
-#permissionshealth.hp.130
+Node130: permissionshealth.hp.130
 Health130: 20
 #
-#permissionshealth.hp.131
+Node131: permissionshealth.hp.131
 Health131: 20
 #
-#permissionshealth.hp.131
+Node132: permissionshealth.hp.131
 Health132: 20
 #
-#permissionshealth.hp.133
+Node133: permissionshealth.hp.133
 Health133: 20
 #
-#permissionshealth.hp.134
+Node134: permissionshealth.hp.134
 Health134: 20
 #
-#permissionshealth.hp.135
+Node135: permissionshealth.hp.135
 Health135: 20
 #
-#permissionshealth.hp.136
+Node136: permissionshealth.hp.136
 Health136: 20
 #
-#permissionshealth.hp.137
+Node137: permissionshealth.hp.137
 Health137: 20
 #
-#permissionshealth.hp.138
+Node138: permissionshealth.hp.138
 Health138: 20
 #
-#permissionshealth.hp.139
+Node139: permissionshealth.hp.139
 Health139: 20
 #
-#permissionshealth.hp.140
+Node140: permissionshealth.hp.140
 Health140: 20
 #
-#permissionshealth.hp.141
+Node141: permissionshealth.hp.141
 Health141: 20
 #
-#permissionshealth.hp.142
+Node142: permissionshealth.hp.142
 Health142: 20
 #
-#permissionshealth.hp.143
+Node143: permissionshealth.hp.143
 Health143: 20
 #
-#permissionshealth.hp.144
+Node144: permissionshealth.hp.144
 Health144: 20
 #
-#permissionshealth.hp.145
+Node145: permissionshealth.hp.145
 Health145: 20
 #
-#permissionshealth.hp.146
+Node146: permissionshealth.hp.146
 Health146: 20
 #
-#permissionshealth.hp.147
+Node147: permissionshealth.hp.147
 Health147: 20
 #
-#permissionshealth.hp.148
+Node148: permissionshealth.hp.148
 Health148: 20
 #
-#permissionshealth.hp.149
+Node149: permissionshealth.hp.149
 Health149: 20
 #
-#permissionshealth.hp.150
+Node150: permissionshealth.hp.150
 Health150: 20
 #
-#permissionshealth.hp.151
+Node151: permissionshealth.hp.151
 Health151: 20
 #
-#permissionshealth.hp.152
+Node152: permissionshealth.hp.152
 Health152: 20
 #
-#permissionshealth.hp.153
+Node153: permissionshealth.hp.153
 Health153: 20
 #
-#permissionshealth.hp.154
+Node154: permissionshealth.hp.154
 Health154: 20
 #
-#permissionshealth.hp.155
+Node155: permissionshealth.hp.155
 Health155: 20
 #
-#permissionshealth.hp.156
+Node156: permissionshealth.hp.156
 Health156: 20
 #
-#permissionshealth.hp.157
+Node157: permissionshealth.hp.157
 Health157: 20
 #
-#permissionshealth.hp.158
+Node158: permissionshealth.hp.158
 Health158: 20
 #
-#permissionshealth.hp.159
+Node159: permissionshealth.hp.159
 Health159: 20
 #
-#permissionshealth.hp.160
+Node160: permissionshealth.hp.160
 Health160: 20
 #
-#permissionshealth.hp.161
+Node161: permissionshealth.hp.161
 Health161: 20
 #
-#permissionshealth.hp.162
+Node162: permissionshealth.hp.162
 Health162: 20
 #
-#permissionshealth.hp.163
+Node163: permissionshealth.hp.163
 Health163: 20
 #
-#permissionshealth.hp.164
+Node164: permissionshealth.hp.164
 Health164: 20
 #
-#permissionshealth.hp.165
+Node165: permissionshealth.hp.165
 Health165: 20
 #
-#permissionshealth.hp.166
+Node166: permissionshealth.hp.166
 Health166: 20
 #
-#permissionshealth.hp.167
+Node167: permissionshealth.hp.167
 Health167: 20
 #
-#permissionshealth.hp.168
+Node168: permissionshealth.hp.168
 Health168: 20
 #
-#permissionshealth.hp.169
+Node169: permissionshealth.hp.169
 Health169: 20
 #
-#permissionshealth.hp.170
+Node170: permissionshealth.hp.170
 Health170: 20
 #
-#permissionshealth.hp.171
+Node171: permissionshealth.hp.171
 Health171: 20
 #
-#permissionshealth.hp.172
+Node172: permissionshealth.hp.172
 Health172: 20
 #
-#permissionshealth.hp.173
+Node173: permissionshealth.hp.173
 Health173: 20
 #
-#permissionshealth.hp.174
+Node174: permissionshealth.hp.174
 Health174: 20
 #
-#permissionshealth.hp.175
+Node175: permissionshealth.hp.175
 Health175: 20
 #
-#permissionshealth.hp.176
+Node176: permissionshealth.hp.176
 Health176: 20
 #
-#permissionshealth.hp.177
+Node177: permissionshealth.hp.177
 Health177: 20
 #
-#permissionshealth.hp.178
+Node178: permissionshealth.hp.178
 Health178: 20
 #
-#permissionshealth.hp.179
+Node179: permissionshealth.hp.179
 Health179: 20
 #
-#permissionshealth.hp.180
+Node180: permissionshealth.hp.180
 Health180: 20
 #
-#permissionshealth.hp.181
+Node181: permissionshealth.hp.181
 Health181: 20
 #
-#permissionshealth.hp.182
+Node182: permissionshealth.hp.182
 Health182: 20
 #
-#permissionshealth.hp.183
+Node183: permissionshealth.hp.183
 Health183: 20
 #
-#permissionshealth.hp.184
+Node184: permissionshealth.hp.184
 Health184: 20
 #
-#permissionshealth.hp.185
+Node185: permissionshealth.hp.185
 Health185: 20
 #
-#permissionshealth.hp.186
+Node186: permissionshealth.hp.186
 Health186: 20
 #
-#permissionshealth.hp.187
+Node187: permissionshealth.hp.187
 Health187: 20
 #
-#permissionshealth.hp.188
+Node188: permissionshealth.hp.188
 Health188: 20
 #
-#permissionshealth.hp.189
+Node189: permissionshealth.hp.189
 Health189: 20
 #
-#permissionshealth.hp.190
+Node190: permissionshealth.hp.190
 Health190: 20
 #
-#permissionshealth.hp.191
+Node191: permissionshealth.hp.191
 Health191: 20
 #
-#permissionshealth.hp.192
+Node192: permissionshealth.hp.192
 Health192: 20
 #
-#permissionshealth.hp.193
+Node193: permissionshealth.hp.193
 Health193: 20
 #
-#permissionshealth.hp.194
+Node194: permissionshealth.hp.194
 Health194: 20
 #
-#permissionshealth.hp.195
+Node195: permissionshealth.hp.195
 Health195: 20
 #
-#permissionshealth.hp.196
+Node196: permissionshealth.hp.196
 Health196: 20
 #
-#permissionshealth.hp.197
+Node197: permissionshealth.hp.197
 Health197: 20
 #
-#permissionshealth.hp.198
+Node198: permissionshealth.hp.198
 Health198: 20
 #
-#permissionshealth.hp.199
+Node199: permissionshealth.hp.199
 Health199: 20
 #
-#permissionshealth.hp.200
+Node200: permissionshealth.hp.200
 Health200: 20
 #
+#This Node admin & guest are the only 2 non customizable nodes
 #permissionshealth.admin
 #This is also set for anyone who is OP on server
 AdminHealth: 200
