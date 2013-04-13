@@ -33,8 +33,6 @@ public class PermissionsHealth extends JavaPlugin implements Listener {
 
 	@Override
 	public void onEnable() {
-		getServer().getPluginManager().registerEvents(new UpdateChecker(), this);
-		
 		getServer().getConsoleSender().sendMessage(
 				ChatColor.RED
 						+ "+------------------------------------------+");
