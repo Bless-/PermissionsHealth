@@ -1,8 +1,4 @@
-#Set Health for Groups/Classes or change the GuestHealth to default all players on server without the permissionshealth.level. nodes
-#
-#permissions Nodes
-#
-#Yes the values Can be changed to whatever you want for each Health1-20 Guest and Admin
+#Yes the values Can be changed to whatever you want for each Health1-200 Guest and Admin
 #======================WARNING======================
 # The Minimum amount of Health is 3
 #
@@ -15,11 +11,23 @@
 #permissionshealth.guest
 GuestHealth: 20
 #
+#All Node: permissionshealth.hp.0
+#are now customizable to what ever you want them to be
+#Examples:
+#Node: thisismynewnode
+#Node: this.is.my.new.node
+#======================WARNING======================
+#
+# You may changes nodes to whatever you want with in reason
+# Warning: duplicate copies will cause errors 
+# 
+#===================================================
+#
 Node1: permissionshealth.hp.1
-Health1: 25
+Health1: 20
 #
 Node2: permissionshealth.hp.2
-Health2: 30
+Health2: 20
 #
 Node3: permissionshealth.hp.3
 Health3: 20

@@ -2,6 +2,7 @@ package net.bless.ph;
 
 import net.bless.ph.PermissionsHealth;
 
+import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -23,7 +24,7 @@ public class ViewHP implements CommandExecutor {
 
 		if (commandLabel.equalsIgnoreCase("phc")
 				|| commandLabel.equalsIgnoreCase("hp")) {
-			this.player.sendMessage(player.getHealth() + " health");
+			this.player.sendMessage(ChatColor.GREEN + "You have " + player.getHealth() + " Health!");
 
 		}
 

@@ -35,7 +35,8 @@ public class OtherHP implements CommandExecutor {
 					if (player.getServer().getPlayer(args[0]) != null) {
 						Player targetPlayer = player.getServer().getPlayer(
 								args[0]);
-						player.sendMessage(ChatColor.GREEN + targetPlayer.getDisplayName() + " has "
+						player.sendMessage(ChatColor.GREEN
+								+ targetPlayer.getDisplayName() + " has "
 								+ targetPlayer.getHealth() + " Health!");
 					} else {
 						player.sendMessage("You do not have permission to do that command!");
