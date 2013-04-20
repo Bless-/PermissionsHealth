@@ -21,13 +21,20 @@ public class Reload implements CommandExecutor {
 				this.player = ((Player) sender);
 			}
 
-			if (cmd.getName().equalsIgnoreCase("phreload")) {
-				this.plugin.reloadConfig();
-				this.player.sendMessage(ChatColor.GOLD
-						+ "PermissionsHealth has been reloaded");
-				return true;
+			if (cmd.getName().equalsIgnoreCase("ph")) {
+				if (this.player.hasPermission("permissionshealth.reload")) {
+					if (args.length == 1) {
+						String subCommand = args[0].toLowerCase();
+						if (subCommand.equals("reload")) {
+							this.plugin.reloadConfig();
+							this.player.sendMessage(ChatColor.GOLD
+									+ "PermissionsHealth has been reloaded");
+							return true;
+						}
+					}
+				}
 			}
-			return false;
 		}
+		return false;
 	}
 }

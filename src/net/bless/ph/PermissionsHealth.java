@@ -3,8 +3,10 @@ package net.bless.ph;
 import java.util.logging.Logger;
 import net.bless.ph.OtherHP;
 import net.bless.ph.PHeal;
+import net.bless.ph.NodeCommand;
 import net.bless.ph.PermissionsHealth;
 import net.bless.ph.Reload;
+import net.bless.ph.LookUp;
 import net.bless.ph.ViewHP;
 import org.bukkit.ChatColor;
 import org.bukkit.event.Listener;
@@ -19,42 +21,44 @@ public class PermissionsHealth extends JavaPlugin implements Listener {
 	@Override
 	public void onDisable() {
 		getServer().getConsoleSender().sendMessage(
-				ChatColor.RED
-						+ "+------------------------------------------+");
+				ChatColor.RED + "+------------------------------------------+");
 		getServer().getConsoleSender().sendMessage(
 				ChatColor.RED + "|    " + ChatColor.WHITE
-			+ "PermissionsHealth " + getDescription().getVersion()
+						+ "PermissionsHealth " + getDescription().getVersion()
 						+ " - Disable" + ChatColor.RED + "    |");
 		getServer().getConsoleSender().sendMessage(
-				ChatColor.RED
-						+ "+------------------------------------------+");
+				ChatColor.RED + "+------------------------------------------+");
 
 	}
 
 	@Override
 	public void onEnable() {
 		getServer().getConsoleSender().sendMessage(
-				ChatColor.RED
-						+ "+------------------------------------------+");
+				ChatColor.RED + "+------------------------------------------+");
 		getServer().getConsoleSender().sendMessage(
 				ChatColor.RED + "|    " + ChatColor.WHITE
-			+ "PermissionsHealth " + getDescription().getVersion()
+						+ "PermissionsHealth " + getDescription().getVersion()
 						+ " - Enabled" + ChatColor.RED + "    |");
 		getServer().getConsoleSender().sendMessage(
-				ChatColor.RED
-						+ "+------------------------------------------+");
+				ChatColor.RED + "+------------------------------------------+");
 
 		this.saveDefaultConfig();
 		PluginManager pm = getServer().getPluginManager();
 		pm.registerEvents(new HPListener(this), this);
-		
-		
+
 		getCommand("pheal").setExecutor(new PHeal(this));
 		getCommand("phc").setExecutor(new ViewHP(this));
 		getCommand("hp").setExecutor(new ViewHP(this));
 		getCommand("pho").setExecutor(new OtherHP(this));
-		getCommand("phreload").setExecutor(new Reload(this));
-	}	
-	
-}
+		getCommand("ph").setExecutor(new Reload(this));
+		getCommand("phl").setExecutor(new LookUp(this));
+		getCommand("phn").setExecutor(new NodeCommand(this));
+		getCommand("phh").setExecutor(new HealthCommand(this));
+		getCommand("phelp").setExecutor(new Help(this));
+		
+		
 
+
+	}
+
+}

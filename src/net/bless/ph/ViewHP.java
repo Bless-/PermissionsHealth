@@ -24,7 +24,8 @@ public class ViewHP implements CommandExecutor {
 
 		if (commandLabel.equalsIgnoreCase("phc")
 				|| commandLabel.equalsIgnoreCase("hp")) {
-			this.player.sendMessage(ChatColor.GREEN + "You have " + player.getHealth() + " Health!");
+			this.player.sendMessage(ChatColor.GREEN + "You have "
+					+ player.getHealth() + " Health!");
 
 		}
 

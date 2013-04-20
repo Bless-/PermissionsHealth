@@ -30,7 +30,7 @@ public class PHeal implements CommandExecutor {
 					this.player.setHealth(player.getMaxHealth());
 					this.player.setFoodLevel(20);
 					this.player.setFireTicks(0);
-					this.player.sendMessage(ChatColor.RED
+					this.player.sendMessage(ChatColor.GREEN
 							+ "You health is full.");
 					return true;
 				}
@@ -43,11 +43,11 @@ public class PHeal implements CommandExecutor {
 						return false;
 					}
 					this.target.setHealth(target.getMaxHealth());
-					this.target.sendMessage(ChatColor.RED
+					this.target.sendMessage(ChatColor.GREEN
 							+ "Your health is full.");
 				}
 				if (args.length > 1)
-					sender.sendMessage("Please write /heal <name>");
+					sender.sendMessage("Please write /pheal <name>");
 			} else {
 				sender.sendMessage(ChatColor.RED
 						+ "You dont have the required permission.");

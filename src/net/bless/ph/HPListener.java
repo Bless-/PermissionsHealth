@@ -2039,6 +2039,7 @@ public class HPListener implements Listener {
 					plugin.getConfig().getInt("AdminHealth"));
 		}
 	}
+
 	@EventHandler(ignoreCancelled = true, priority = EventPriority.MONITOR)
 	public void onKick(PlayerKickEvent event) {
 		event.getPlayer().setMaxHealth(20);
