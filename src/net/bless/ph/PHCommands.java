@@ -149,26 +149,6 @@ public class PHCommands implements CommandExecutor {
         }
         
         return true;
-/*
-        if (cmd.getName().equalsIgnoreCase("ph")) {
-            if (args.length == 0) {
-                cmdHelp(sender, args);
-                return true;
-            } else {
-                String subCommand = args[0].toLowerCase();
-                if (subCommand.equals("help")) {
-                } else if (subCommand.equals("reload")) {
-                } else if (subCommand.equals("update")) {
-                } else if (subCommand.equals("add")) {
-                } else if (subCommand.equals("heal")) {
-                } else if (subCommand.equals("hp")) {
-                } else {
-                     
-                }
-                return true;
-            }
-        }
-        return false;*/
     }
 
     /**
@@ -301,7 +281,7 @@ public class PHCommands implements CommandExecutor {
                 setHealthValue(sender, nodeName, nodeValue);
             } else {
                 // for update command
-                sender.sendMessage(ChatColor.GREEN + "Error - node not found, use /ph add <node> <value> if you want to add it.");
+                sender.sendMessage(ChatColor.RED + "Error - node not found, use /ph add <node> <value> if you want to add it.");
             }
             return true;
         }
@@ -321,7 +301,7 @@ public class PHCommands implements CommandExecutor {
         plugin.getConfig().set(nodeName, healthValue);
         plugin.saveConfig();
         PermissionsHealth.permissionsMap.put(nodeName, healthValue);
-        sender.sendMessage(ChatColor.RED
-                + nodeName + " has been Updated to " + healthValue);
+        sender.sendMessage(ChatColor.GREEN + "Permission node '"
+                + nodeName + "' has been updated to " + healthValue);
     }
 }
