@@ -266,7 +266,7 @@ public class PHCommands implements CommandExecutor {
             return false;
         }
 
-        String nodeName = args[0];
+        String nodeName = "permissionshealth."+args[0];
         String nodeValue = args[1];
 
         if (PermissionsHealth.permissionsMap.containsKey(nodeName)) {
