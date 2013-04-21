@@ -21,12 +21,13 @@ public class PHCommands implements CommandExecutor {
     }
 
     private enum OBCommand {
-        HELP("help", "", "permissionshealth.admin.help"), 
-        RELOAD("reload", "r", "permissionshealth.admin.reload"),
-        ADD("add", "a", "permissionshealth.admin.add"), 
-        UPDATE("update", "u", "permissionshealth.admin.update"), 
-        HEAL("heal", "h", "permissionshealth.admin.heal"), 
-        HP("hp", "p", "permissionshealth.admin.showhp");
+        // permission is not permissionshealth.admin.* as this conflicts if user adds "admin" health group
+        HELP("help", "", "phadmin.help"), 
+        RELOAD("reload", "r", "phadmin.reload"),
+        ADD("add", "a", "phadmin.add"), 
+        UPDATE("update", "u", "phadmin.update"), 
+        HEAL("heal", "h,eal", "phadmin.heal"), 
+        HP("hp", "p", "phadmin.showhp");
         
         private String cmdName;
         private String cmdShort;
@@ -102,6 +103,8 @@ public class PHCommands implements CommandExecutor {
             pass = true;
         else if (sender instanceof Player && ((Player)sender).hasPermission(cmd.perm))
             pass = true;
+        else if (sender instanceof ConsoleCommandSender)
+            pass = true;
 
         if (!pass)
             sender.sendMessage("You don't have permission for this command.");
@@ -159,16 +162,23 @@ public class PHCommands implements CommandExecutor {
         if (sender instanceof ConsoleCommandSender && playerName == null) { // console and no player name
             player.sendMessage("Please specify a player by doing /pho <player]>");
             return true;
-        } else if (playerName == null) { // player and no player name
-            this.player.sendMessage(ChatColor.GREEN + "You have " + player.getHealth() + " Health!");
-            return true;
         }
-
-        Player targetPlayer = Bukkit.getServer().getPlayer(playerName);
+        
+        Player targetPlayer = null;
+        String prefix = "";
+        
+        if (playerName == null) { // player and no player name
+            targetPlayer = player;
+            prefix = "You have ";
+        } else {
+            targetPlayer = Bukkit.getServer().getPlayer(playerName);
+            prefix = targetPlayer.getDisplayName() + " has ";
+        }
+        
         if (targetPlayer != null) {
             player.sendMessage(ChatColor.GREEN
-                    + targetPlayer.getDisplayName() + " has "
-                    + targetPlayer.getHealth() + " Health!");
+                    + prefix
+                    + targetPlayer.getHealth() + " health (maxhp: "+targetPlayer.getMaxHealth()+")!");
         } else {
             player.sendMessage(ChatColor.RED + "That player is not online!");
         }
@@ -236,6 +246,14 @@ public class PHCommands implements CommandExecutor {
      */
     private void cmdReload(CommandSender sender) {
         this.plugin.reloadConfig();
+        PHConfig.load(this.plugin.getConfig());
+        
+        for (Player player : Bukkit.getOnlinePlayers()) {
+            int health = player.getHealth();
+            player.setMaxHealth(PermissionsHealth.getMaxHealth(player.getName()));
+            player.setHealth(health);
+        }
+
         sender.sendMessage(ChatColor.GOLD
                 + "PermissionsHealth has been reloaded");
     }
@@ -266,13 +284,12 @@ public class PHCommands implements CommandExecutor {
             return false;
         }
 
-        String nodeName = "permissionshealth."+args[0];
         String nodeValue = args[1];
+        String nodeName = "permissionshealth."+args[0].replace(".", "_").toLowerCase();
 
         if (PermissionsHealth.permissionsMap.containsKey(nodeName)) {
             // key exists, update map and save to config
             setHealthValue(sender, nodeName, nodeValue);
-            return true;
         } else {
             // no permission currently, ask player if they want to create?
             // or just create a new node?
@@ -283,8 +300,15 @@ public class PHCommands implements CommandExecutor {
                 // for update command
                 sender.sendMessage(ChatColor.RED + "Error - node not found, use /ph add <node> <value> if you want to add it.");
             }
-            return true;
         }
+
+        for (Player player : Bukkit.getOnlinePlayers()) {
+            int health = player.getHealth();
+            int newMax = PermissionsHealth.getMaxHealth(player.getName());
+            player.setMaxHealth(newMax);
+            player.setHealth(health < newMax? health : newMax);
+        }
+        return true;
     }
 
     /**
