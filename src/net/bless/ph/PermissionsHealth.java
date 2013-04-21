@@ -35,6 +35,11 @@ public class PermissionsHealth extends JavaPlugin implements Listener {
 	@Override
 	public void onEnable() {
 		this.saveDefaultConfig();
+		
+        Log.pluginName = this.getDescription().getName();
+        Log.pluginVersion = this.getDescription().getVersion();
+        Log.setConfigVerbosity(this.getConfig());
+        
 		PHConfig.load(this.getConfig());
 		PluginManager pm = getServer().getPluginManager();
 		pm.registerEvents(new HPListener(this), this);
@@ -46,14 +51,11 @@ public class PermissionsHealth extends JavaPlugin implements Listener {
 		// I would recommend just:
 		//getServer().getConsoleSender().sendMessage(getDescription().getName()+" "+getDescription().getVersion()+" loaded.");
 		
-        getServer().getConsoleSender().sendMessage(
-                ChatColor.RED + "+------------------------------------------+");
-        getServer().getConsoleSender().sendMessage(
-                ChatColor.RED + "|    " + ChatColor.WHITE
+        Log.normal(ChatColor.RED + "+------------------------------------------+");
+        Log.normal(ChatColor.RED + "|    " + ChatColor.WHITE
                         + "PermissionsHealth " + getDescription().getVersion()
                         + " - Enabled" + ChatColor.RED + "    |");
-        getServer().getConsoleSender().sendMessage(
-                ChatColor.RED + "+------------------------------------------+");
+        Log.normal(ChatColor.RED + "+------------------------------------------+");
 
 	}
 
@@ -61,17 +63,26 @@ public class PermissionsHealth extends JavaPlugin implements Listener {
      *  Gets the configured MaxHealth of given player.
      *  
      * @param playerName Exact name of player, must be online
-     * @return MaxHealth that would be set, null if no permission found or player doesn't exist
+     * @return MaxHealth that would be set, "defaulthealth" if no 
+     *              permission found or null if player doesn't exist
      */
-    public Integer getMaxHealth(String playerName) {
-        for (Entry<String, Integer> entry  : PermissionsHealth.permissionsMap.entrySet()) {
-            Player player = Bukkit.getPlayerExact(playerName);
-            
-            if (player.hasPermission(entry.getKey())) {
-                return entry.getValue();
-            }
-        }
-        return null;
-    }
+	public static Integer getMaxHealth(String playerName) {
+        Player player = Bukkit.getPlayerExact(playerName);
+        Log.high("Checking player: "+playerName);
+        if (player == null) return null;
+        
+        if (player.isOp()) return PHConfig.opHealth;
+        
+	    for (Entry<String, Integer> entry  : PermissionsHealth.permissionsMap.entrySet()) {
+
+	        if (player.hasPermission(entry.getKey())) {
+	            Log.high("Got "+entry.getKey()+" ("+entry.getValue()+")");
+	            return entry.getValue();
+	        }
+	    }
+
+        Log.high("Not permission found, returning default health ("+PHConfig.defaultHealth+")");
+	    return PHConfig.defaultHealth;
+	}
 
 }

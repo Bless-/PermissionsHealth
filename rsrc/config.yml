@@ -1,4 +1,3 @@
-# Yes the values Can be changed to whatever you want for each Health1-200 Guest and Admin
 #======================WARNING======================
 # The Minimum amount of Health is 3
 #
@@ -7,19 +6,17 @@
 # Going Past these Safe Guard Limits you may find yourself Lagging, Dieing Instantly or Crashing when Attacking others or other when they attack you.
 #===================================================
 #
-# Guest Health is default for anyone who does not have a permissions node
 
+# Verbosity of console messages (low, normal, high, highest)
+verbosity: normal 
 
-GuestHealth: 20 # permissionshealth.guest
-
-#This Node admin & guest are the only 2 non customizable nodes
-
-#This is also set for anyone who is OP on server
-AdminHealth: 200 #permissionshealth.admin
+# Health applied if no other permission found
+defaulthealth: 20
+# Health applied to OP players (as they automatically have all permission nodes)
+ophealth: 20
 
 # Add new permission nodes here - give player permissionshealth.<name> permission
 permissionshealth:
-  guest: 20
   admin: 20
   
   group1: 20

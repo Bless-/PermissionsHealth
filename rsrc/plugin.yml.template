@@ -7,11 +7,4 @@ commands:
     ph:
       description: PermissionsHealth admin commands
       usage: /ph help - for more info
-      aliases: [phh, phr, pha, phu, php]
-permissions:
-   permissionshealth.guest:
-        default: true
-        description: Gives Health to Guest
-   permissionshealth.admin:
-        description: Gives Health to Admin
-        default: op
+      aliases: [phh, phr, pha, phu, php, pheal]
