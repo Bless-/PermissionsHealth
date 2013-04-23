@@ -6,20 +6,28 @@
 # Going Past these Safe Guard Limits you may find yourself Lagging, Dieing Instantly or Crashing when Attacking others or other when they attack you.
 #===================================================
 #
+# Contorls HealthRegain:
+# false : default minecraft regain 1 health every 4sec for 20 health
+# true : every 20 health 1 regain is added so 40 health would regain 2 every 4 sec, and so on based on 20 health.
+# 20 health = 1
+# 40 health = 2
+# 500 health = 13
+# 9999 health = 240
+# works like normal when Hunger bar is full does not regain if its not.
+HealthRegainScale: false
 
 # Verbosity of console messages (low, normal, high, highest)
-verbosity: normal 
+verbosity: low
 
 # Health applied if no other permission found
 defaulthealth: 20
+
 # Health applied to OP players (as they automatically have all permission nodes)
 ophealth: 20
 
 # Add new permission nodes here - give player permissionshealth.<name> permission
 permissionshealth:
-  admin: 20
-  
-  group1: 20
-  group2: 20
-
+  test_1: 20
+  test_2: 50
+  test_3: 80
   mynewpermission: 200  # give player permissionshealth.mynewpermission, they get 200 health

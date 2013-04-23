@@ -1,10 +1,13 @@
 package net.bless.ph;
 
 
+import org.bukkit.entity.EntityType;
 import org.bukkit.entity.HumanEntity;
+import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
+import org.bukkit.event.entity.EntityRegainHealthEvent;
 import org.bukkit.event.inventory.InventoryCloseEvent;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerKickEvent;
@@ -12,7 +15,7 @@ import org.bukkit.event.player.PlayerQuitEvent;
 
 public class HPListener implements Listener {
 	PermissionsHealth plugin;
-
+    public Boolean HealthRegainScale;
 	public HPListener(PermissionsHealth instance) {
 		plugin = instance;
 	}
@@ -22,8 +25,10 @@ public class HPListener implements Listener {
         setMaxHealth(event.getPlayer());
 	}
 
-/*	@EventHandler
-	public void onEntityRegainHealthEvent(EntityRegainHealthEvent event) {     
+	@EventHandler
+	public void onEntityRegainHealthEvent(EntityRegainHealthEvent event) {    
+		   if(plugin.getConfig().getBoolean("HealthRegainScale") == true)
+		   {
 	    if (event.getEntityType().equals(EntityType.PLAYER)) {
 	        Double regainAmount = Double.valueOf(event.getAmount());
 	        Player player = (Player)event.getEntity();
@@ -34,8 +39,10 @@ public class HPListener implements Listener {
             Log.high("Player regain event..."+regainAmount.intValue());
 	        event.setAmount(regainAmount.intValue() > 0 ? regainAmount.intValue() : 1);
 	    }
-	}*/
-
+	}
+	        event.setCancelled(false);
+	   }
+	
 	@EventHandler
 	public void onInventoryClose(InventoryCloseEvent event) {
         setMaxHealth(event.getPlayer());

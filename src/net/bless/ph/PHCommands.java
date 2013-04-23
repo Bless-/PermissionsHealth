@@ -225,18 +225,24 @@ public class PHCommands implements CommandExecutor {
     private void cmdHelp(CommandSender sender, String[] args) {
         // used a treemap because it's sorted (we want msgs to appear in order)
         Map<String, String> helpInfo = new TreeMap<String, String>();
-        helpInfo.put("/php", "used to view your current health");
+        helpInfo.put("",ChatColor.DARK_RED + "❤❤❤❤❤❤❤❤❤❤" + ChatColor.GOLD + "PermissionsHealth Help" + ChatColor.DARK_RED + "❤❤❤❤❤❤❤❤❤❤");
         helpInfo.put("/phr", "reloads the config");
+        helpInfo.put("/ph reload", "reloads the config");
         helpInfo.put("/phh", "used to to fully heal you");
         helpInfo.put("/phh <player>", "used to to fully heal a player");
+        helpInfo.put("/pheal", "used to to fully heal you");
+        helpInfo.put("/pheal <player>", "used to to fully heal a player");
+        helpInfo.put("/ph heal", "used to to fully heal you");
+        helpInfo.put("/ph heal <player>", "used to to fully heal a player");
+        helpInfo.put("/ph hp", "used to view your current health");
+        helpInfo.put("/ph hp <player>", "used to view target's current health");
+        helpInfo.put("/php", "used to view your current health");
         helpInfo.put("/php <player>", "used to view target's current health");
-        helpInfo.put("/phl", "displays pages for nodes and health");
-        helpInfo.put("/phl page", "used to view your current health");
-        helpInfo.put("/ph add <node#> <healthval>", "lets you edit the nodes from ingame changing them");
-        helpInfo.put("/ph update <node#> <healthval>", "lets you edit ingame the amount of health the node has");
+        helpInfo.put("/ph add <node_name > <healthvalue>", "Add's a new Node to the config");
+        helpInfo.put("/ph update <node_name> <healthvalue>", "Updates the Node's Health in config");
         
         for (Entry<String, String> entry : helpInfo.entrySet()) {
-            this.player.sendMessage("" + ChatColor.GOLD + entry.getKey() + ChatColor.WHITE + " : " + entry.getValue() + ".");
+            this.player.sendMessage("" + ChatColor.YELLOW + entry.getKey() + ChatColor.GRAY + " : " + entry.getValue() + ".");
         }
     }
 
@@ -245,6 +251,7 @@ public class PHCommands implements CommandExecutor {
      * @return
      */
     private void cmdReload(CommandSender sender) {
+        this.plugin.reloadConfig();
         this.plugin.reloadConfig();
         PHConfig.load(this.plugin.getConfig());
         

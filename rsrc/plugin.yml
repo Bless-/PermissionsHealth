@@ -1,50 +1,13 @@
 name: PermissionsHealth
 main: net.bless.ph.PermissionsHealth
-version: 0.1.44
-builddate: 2013/04/16 05:51
+version: 0.2.01
+builddate: 2013/04/23 02:14
 author: Bless
+authors:
+  - Bless
+  - Zarius
 commands:
-    pheal:
-      description: Use this to fully heal a player.
-      usage: /<command> [player]
-      permission: permissionshealth.pheal
-      permission-message:  You don't have permission
-    phc:
-      description: Use to view your current health.
-      usage: /<command>
-    hp:
-      description: Use to view your current health.
-      usage: /<command>
-    pho:
-      description: Use to view target's current health.
-      usage: /<command>
     ph:
-      description: Help and Reload
-      usage: /ph reload or help
-      permission: permissionshealth.reload
-      permission-message: You don't have permission
-    phelp:
-      description: Help
-      usage: /ph help
-      permission: permissionshealth.help
-      permission-message: You don't have permission
-    phl:
-      description: Lookup
-      usage: /phl page
-    phn:
-      description: Allows you to change Node & Health in config from in-game.
-      usage: /<command> <node> <permissionsnode>
-      permission: permissionshealth.c.node
-      permission-message: You don't have permission
-    phh:
-      description: Allows you to change Node & Health in config from in-game.
-      usage: /<command> <health> <amount>
-      permission: permissionshealth.c.health
-      permission-message: You don't have permission
-permissions:
-   permissionshealth.guest:
-        default: true
-        description: Gives Health to Guest
-   permissionshealth.admin:
-        description: Gives Health to Admin
-        default: op
+      description: PermissionsHealth admin commands
+      usage: /ph help - for more info
+      aliases: [phh, phr, pha, phu, php, pheal]

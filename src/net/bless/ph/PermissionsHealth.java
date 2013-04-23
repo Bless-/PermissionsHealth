@@ -49,13 +49,8 @@ public class PermissionsHealth extends JavaPlugin implements Listener {
 	//	getCommand("phl").setExecutor(new LookUp(this));
 		
 		// I would recommend just:
-		//getServer().getConsoleSender().sendMessage(getDescription().getName()+" "+getDescription().getVersion()+" loaded.");
+		getServer().getConsoleSender().sendMessage(getDescription().getName()+" "+getDescription().getVersion()+" loaded.");
 		
-        Log.normal(ChatColor.RED + "+------------------------------------------+");
-        Log.normal(ChatColor.RED + "|    " + ChatColor.WHITE
-                        + "PermissionsHealth " + getDescription().getVersion()
-                        + " - Enabled" + ChatColor.RED + "    |");
-        Log.normal(ChatColor.RED + "+------------------------------------------+");
 
 	}
 
